@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!-->
+<html>
+<!--<![endif]-->
+<head>
+    <%= require('./html/head.html') %>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+<body>
+    <%= require('./html/header.html') %>
+    <%= require('./html/nav.html') %>
+    <%= require('./html/main.html') %>
+    <%= require('./html/footer.html') %>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+
+    
+</html>
